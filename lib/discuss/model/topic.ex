@@ -12,6 +12,6 @@ defmodule Discuss.Model.Topic do
   def changeset(topic, attrs) do
     topic
     |> cast(attrs, [:title])
-    |> validate_required([:title])
+    |> validate_required([:title], message: "Diz da wae")
   end
 end
