@@ -8,7 +8,9 @@
 </.header>
 
 <.table id="topics" rows={@topics} row_click={&JS.navigate(~p"/topics/#{&1}")}>
+  <:col :let={topic} label="id">{topic.id}</:col>
   <:col :let={topic} label="Title">{topic.title}</:col>
+  <:col :let={topic} label="Insert">{topic.inserted_at}</:col>
   <:action :let={topic}>
     <div class="sr-only">
       <.link navigate={~p"/topics/#{topic}"}>Show</.link>
