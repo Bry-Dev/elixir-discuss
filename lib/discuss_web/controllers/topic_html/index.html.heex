@@ -13,7 +13,7 @@
   <:col :let={topic} label="Insert">{topic.inserted_at}</:col>
   <:action :let={topic}>
     <div class="sr-only">
-      <.link navigate={~p"/topics/#{topic}"}>Show</.link>
+      <.link navigate={~p"/topics/#{topic.id}"}>Show</.link>
     </div>
     <.link navigate={~p"/topics/#{topic}/edit"}>Edit</.link>
   </:action>
